@@ -1,0 +1,7 @@
+Na descrição do projeto, as palavras chaves como estudo, comunicação e democracia vão ser coloridas de acordo com o tempo
+Um exemplo é:
+https://www.figma.com/
+
+Outra ideia é colocar um botão que volta para o início do site
+
+Sugestões aqui:

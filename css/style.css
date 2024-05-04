@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+html,body {
+    overflow-x: hidden !important;
+}
+body {
+    height: 100%;
+}
+header {
+    height: 100vh;
+}
+.top_header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.top_header a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.bottom_header {
+    display: flex;
+}
+.bottom_header img {
+    width: 34%;
+}
+.presentation {
+    padding: 30px;
+    width: 100vw;
+}
+.presentation * {
+    margin-bottom: 40px;
+}
+.presentation h1 {
+    text-align: center;
+}
