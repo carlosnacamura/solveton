@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  height: 60vh;
+  height: 110vh;
   background-color: rgb(189, 220, 247);
   display: grid;
   place-items: center;
@@ -32,7 +32,7 @@ section .s-title {
   height: fit-content;
   text-align: end;
   animation-name: descida;
-  animation-timeline: view(-70% 80%);
+  animation-timeline: view(-160% 100%);
   animation-timing-function: linear;
 }
 section .s-title h1 {
@@ -44,10 +44,7 @@ section .s-title h1 {
     position: sticky;
     top: 0;
   }
-  75% {
-    top: 100%;
-  }
   100% {
-    top: 10%;
+    top: 100%;
   }
 }
