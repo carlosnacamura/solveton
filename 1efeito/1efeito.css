@@ -50,16 +50,16 @@ section .s-title h1 {
   }
 }
 
-@supports (animation-timeline: view(-160% 40%)) {
+@supports (animation-timeline: view(-160% 80%)) {
   section .s-title{
-    animation-timeline: view(-160% 40%);
+    animation-timeline: view(-160% 80%);
     animation-name: descida;
     animation-timing-function: linear;
     /* background-color: red; */
   }
 }
 
-@supports not (animation-timeline: view(-160% 40%)) {
+@supports not (animation-timeline: view(-160% 80%)) {
   section .s-title{
     position: sticky;
     top: 10%;

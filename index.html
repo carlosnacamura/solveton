@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="1efeito/1efeito.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/keywords.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="1efeito/1efeito.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,92 +18,130 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="js/scrollReveal.js" defer></script>
     <title>Solveton</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="top_header">
-            <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" aria-disabled="true">Solveton</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
+      <div class="top_header">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+          data-bs-theme="dark"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-start text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" aria-disabled="true">Solveton</a>
             <button
+              class="navbar-toggler"
               type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Sobre nós</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nossos objetivos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Login
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="php/login.php">Login</a></li>
-                  <li><a class="dropdown-item" href="#">Entrar</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start text-bg-dark"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                  Menu
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Login
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li>
+                        <a class="dropdown-item" href="php/login.php">Login</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li><a class="dropdown-item" href="#">Entrar</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#introduction"
+                      >Introdução</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nossos objetivos</a>
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-        </div>
-        <div class="bottom_header">
-            <img src="imgs/image_headerBottom_left.jpg" alt="Pessoas de visão lateral corrigindo erros gramaticais">
-            <div class="presentation">
-                <h1>Solveton</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quos hic inventore, aliquam consequuntur repellendus aperiam labore! Ratione, tempore beatae eos voluptate consequuntur pariatur laborum, fugiat nostrum voluptas dolorum sit.
-                Libero, ex veniam totam voluptatibus aperiam id ea architecto, enim quidem odio atque perspiciatis odit quis, assumenda sed quam quo? Deleniti quidem excepturi quasi ratione voluptatem molestias quam cum unde!
-                Quasi labore, ratione ullam minus deserunt libero dicta cupiditate ab doloribus voluptatibus fuga nobis, laborum id modi et fugit natus aliquid sit alias iste excepturi delectus, a consequuntur? Tenetur, similique!
-                In quis vitae laboriosam quaerat ipsum voluptatem voluptas doloribus harum! Rem eius quibusdam provident quo minus natus sequi ex, amet aut rerum vel corrupti tenetur accusamus deserunt velit magnam odit.</p>
+              </div>
             </div>
-            <img src="imgs/image_headerBottom_right.jpg" alt="Crianças em sala de aula tendo aula">
+          </div>
+        </nav>
+      </div>
+      <div class="bottom_header">
+        <img
+          src="imgs/image_headerBottom_left.jpg"
+          alt="Pessoas de visão lateral corrigindo erros gramaticais"
+        />
+        <div class="presentation">
+          <h1>Solveton</h1>
+          <p>
+            Solveton é um site sobre
+            <strong class="keywords"
+              >estudo
+              <img
+                class="icons"
+                src="imgs/icons_estudante.gif"
+                alt="Icone de estudante" /></strong
+            >,
+            <strong class="keywords"
+              >comunicação
+              <img
+                class="icons"
+                src="imgs/icons_comunicação.gif"
+                alt="Ícone de Comunicação"
+            /></strong>
+            e
+            <strong class="keywords"
+              >democrácia
+              <img
+                class="icons"
+                src="imgs/icons_debate.gif"
+                alt="Icon de um debate"
+            /></strong>
+            para todos nossos estudantes
+          </p>
         </div>
+        <img
+          src="imgs/image_headerBottom_right.jpg"
+          alt="Crianças em sala de aula tendo aula"
+        />
+      </div>
     </header>
     <main>
       <section>
         <div class="s-title">
-          <h1>Introdução</h1>
+          <h1 id="#introduction">Introdução</h1>
         </div>
         <div class="s-content">
           <p>
@@ -119,13 +158,13 @@
         </div>
         <div class="s-content" id="test">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi
-            quibusdam et consectetur laborum fugiat delectus tempora incidunt non
-            labore! Culpa iusto iure nulla quis nostrum id incidunt sed deserunt
-            earum, harum quasi, ab consequatur numquam! Blanditiis iusto hic vitae
-            voluptatibus, magni dolorum, modi, corporis quibusdam eveniet veniam
-            rerum consectetur veritatis nam ipsum. Recusandae quisquam nisi at
-            amet, tempora aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            sequi quibusdam et consectetur laborum fugiat delectus tempora
+            incidunt non labore! Culpa iusto iure nulla quis nostrum id incidunt
+            sed deserunt earum, harum quasi, ab consequatur numquam! Blanditiis
+            iusto hic vitae voluptatibus, magni dolorum, modi, corporis
+            quibusdam eveniet veniam rerum consectetur veritatis nam ipsum.
+            Recusandae quisquam nisi at amet, tempora aut?
           </p>
         </div>
       </section>
@@ -135,13 +174,16 @@
         </div>
         <div class="s-content" id="test">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi
-            quibusdam et consectetur laborum fugiat delectus tempora incidunt non
-            labore! Culpa iusto iure nulla quis nostrum id incidunt sed deserunt
-            earum, harum quasi, ab consequatur numquam! Blanditiis iusto hic vitae
-            voluptatibus, magni dolorum, modi, corporis quibusdam eveniet veniam
-            rerum consectetur veritatis nam ipsum. Recusandae quisquam nisi at
-            amet, tempora aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            sequi quibusdam et consectetur laborum fugiat delectus tempora
+            incidunt non labore! Culpa iusto iure nulla quis nostrum id incidunt
+            sed deserunt earum, harum quasi, ab consequatur numquam! Blanditiis
+            iusto hic vitae voluptatibus, magni dolorum, modi, corporis
+            quibusdam eveniet veniam rerum consectetur veritatis nam ipsum.
+            Recusandae quisquam nisi at amet, tempora aut? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Quod fugit dignissimos ad impedit
+            nobis nam repellat odit mollitia accusamus sed, sapiente ex
+            voluptatibus placeat tenetur non rerum odio provident nihil.
           </p>
         </div>
       </section>
@@ -151,13 +193,13 @@
         </div>
         <div class="s-content" id="test">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi
-            quibusdam et consectetur laborum fugiat delectus tempora incidunt non
-            labore! Culpa iusto iure nulla quis nostrum id incidunt sed deserunt
-            earum, harum quasi, ab consequatur numquam! Blanditiis iusto hic vitae
-            voluptatibus, magni dolorum, modi, corporis quibusdam eveniet veniam
-            rerum consectetur veritatis nam ipsum. Recusandae quisquam nisi at
-            amet, tempora aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            sequi quibusdam et consectetur laborum fugiat delectus tempora
+            incidunt non labore! Culpa iusto iure nulla quis nostrum id incidunt
+            sed deserunt earum, harum quasi, ab consequatur numquam! Blanditiis
+            iusto hic vitae voluptatibus, magni dolorum, modi, corporis
+            quibusdam eveniet veniam rerum consectetur veritatis nam ipsum.
+            Recusandae quisquam nisi at amet, tempora aut?
           </p>
         </div>
       </section>
@@ -167,13 +209,13 @@
         </div>
         <div class="s-content" id="test">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi
-            quibusdam et consectetur laborum fugiat delectus tempora incidunt non
-            labore! Culpa iusto iure nulla quis nostrum id incidunt sed deserunt
-            earum, harum quasi, ab consequatur numquam! Blanditiis iusto hic vitae
-            voluptatibus, magni dolorum, modi, corporis quibusdam eveniet veniam
-            rerum consectetur veritatis nam ipsum. Recusandae quisquam nisi at
-            amet, tempora aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            sequi quibusdam et consectetur laborum fugiat delectus tempora
+            incidunt non labore! Culpa iusto iure nulla quis nostrum id incidunt
+            sed deserunt earum, harum quasi, ab consequatur numquam! Blanditiis
+            iusto hic vitae voluptatibus, magni dolorum, modi, corporis
+            quibusdam eveniet veniam rerum consectetur veritatis nam ipsum.
+            Recusandae quisquam nisi at amet, tempora aut?
           </p>
         </div>
       </section>
@@ -183,13 +225,13 @@
         </div>
         <div class="s-content" id="test">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi
-            quibusdam et consectetur laborum fugiat delectus tempora incidunt non
-            labore! Culpa iusto iure nulla quis nostrum id incidunt sed deserunt
-            earum, harum quasi, ab consequatur numquam! Blanditiis iusto hic vitae
-            voluptatibus, magni dolorum, modi, corporis quibusdam eveniet veniam
-            rerum consectetur veritatis nam ipsum. Recusandae quisquam nisi at
-            amet, tempora aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            sequi quibusdam et consectetur laborum fugiat delectus tempora
+            incidunt non labore! Culpa iusto iure nulla quis nostrum id incidunt
+            sed deserunt earum, harum quasi, ab consequatur numquam! Blanditiis
+            iusto hic vitae voluptatibus, magni dolorum, modi, corporis
+            quibusdam eveniet veniam rerum consectetur veritatis nam ipsum.
+            Recusandae quisquam nisi at amet, tempora aut?
           </p>
         </div>
       </section>
@@ -199,13 +241,13 @@
         </div>
         <div class="s-content" id="test">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi
-            quibusdam et consectetur laborum fugiat delectus tempora incidunt non
-            labore! Culpa iusto iure nulla quis nostrum id incidunt sed deserunt
-            earum, harum quasi, ab consequatur numquam! Blanditiis iusto hic vitae
-            voluptatibus, magni dolorum, modi, corporis quibusdam eveniet veniam
-            rerum consectetur veritatis nam ipsum. Recusandae quisquam nisi at
-            amet, tempora aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            sequi quibusdam et consectetur laborum fugiat delectus tempora
+            incidunt non labore! Culpa iusto iure nulla quis nostrum id incidunt
+            sed deserunt earum, harum quasi, ab consequatur numquam! Blanditiis
+            iusto hic vitae voluptatibus, magni dolorum, modi, corporis
+            quibusdam eveniet veniam rerum consectetur veritatis nam ipsum.
+            Recusandae quisquam nisi at amet, tempora aut?
           </p>
         </div>
       </section>
@@ -215,16 +257,16 @@
         </div>
         <div class="s-content" id="test">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sequi
-            quibusdam et consectetur laborum fugiat delectus tempora incidunt non
-            labore! Culpa iusto iure nulla quis nostrum id incidunt sed deserunt
-            earum, harum quasi, ab consequatur numquam! Blanditiis iusto hic vitae
-            voluptatibus, magni dolorum, modi, corporis quibusdam eveniet veniam
-            rerum consectetur veritatis nam ipsum. Recusandae quisquam nisi at
-            amet, tempora aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            sequi quibusdam et consectetur laborum fugiat delectus tempora
+            incidunt non labore! Culpa iusto iure nulla quis nostrum id incidunt
+            sed deserunt earum, harum quasi, ab consequatur numquam! Blanditiis
+            iusto hic vitae voluptatibus, magni dolorum, modi, corporis
+            quibusdam eveniet veniam rerum consectetur veritatis nam ipsum.
+            Recusandae quisquam nisi at amet, tempora aut?
           </p>
         </div>
       </section>
     </main>
-</body>
+  </body>
 </html>

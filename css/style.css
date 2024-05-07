@@ -1,6 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 body {
     height: 100%;
@@ -8,26 +9,42 @@ body {
 }
 .navbar {
     border-radius: 30px;
-    margin: 20px;
+    margin: 20px 20px 20px 20px;
     padding: 20px;
     box-shadow: 4px 4px 30px rgb(45, 45, 45);
+}
+a.navbar-brand {
+    margin-left: 20px;
 }
 .bottom_header {
     display: flex;
     height: 100%;
     margin-top: 3em;
+    overflow-x: hidden !important;
 }
 .bottom_header img {
     width: 34%;
 }
 .presentation {
-    padding: 30px;
-    width: 100vw;
+    padding: 50px;
+    width: 70vw !important;
     background-color: white;
+    border: 10px 0px 10px 0px solid black;
 }
 .presentation * {
     margin-bottom: 40px;
 }
 .presentation h1 {
     text-align: center;
+}
+.presentation p,strong {
+    font-size: 40px;
+}
+.presentation strong {
+    transition: 1s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+}
+img.icons {
+    width: 50px;
 }
