@@ -24,16 +24,16 @@ section {
   display: flex;
   position: relative;
 }
+body > *:not(header):nth-child(even){
+  flex-direction: row-reverse;
+}
 section > * {
   padding: 2rem;
 }
 section .s-title {
-  min-width: 25%;
+  min-width: 35%;
   height: fit-content;
-  text-align: end;
-  animation-name: descida;
-  animation-timeline: view(-160% 100%);
-  animation-timing-function: linear;
+  text-align: center;
 }
 section .s-title h1 {
   font-size: 3rem;
@@ -46,5 +46,22 @@ section .s-title h1 {
   }
   100% {
     top: 100%;
+  }
+}
+
+@supports (animation-timeline: view(-160% 100%)) {
+  section .s-title{
+    animation-timeline: view(-160% 100%);
+    animation-name: descida;
+    animation-timing-function: linear;
+    /* background-color: red; */
+  }
+}
+
+@supports not (animation-timeline: view(-160% 100%)) {
+  section .s-title{
+    position: sticky;
+    top: 0;
+    /* background-color: blue; */
   }
 }
