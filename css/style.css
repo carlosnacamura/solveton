@@ -37,14 +37,14 @@ a.navbar-brand {
 .presentation h1 {
     text-align: center;
 }
-.presentation p,strong {
-    font-size: 40px;
+.presentation p {
+    font-size: 190%;
 }
 .presentation strong {
     transition: 1s;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 45px;
+    font-size: 140%;
 }
 img.icons {
-    width: 50px;
+    width: 18%;
 }

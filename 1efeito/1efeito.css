@@ -25,7 +25,7 @@ section {
   position: relative;
 }
 /* body > *:not(header):nth-child(even) */
-main *:nth-child(even){
+main *:nth-child(even) {
   flex-direction: row-reverse;
 }
 section > * {
@@ -35,6 +35,13 @@ section .s-title {
   min-width: 35%;
   height: fit-content;
   text-align: center;
+  background-color: rgb(165, 187, 228);
+}
+section .s-title::after {
+  content: "|";
+  position: absolute;
+  margin: -170px 0px 0px -60px;
+  font-size: 80vh;
 }
 section .s-title h1 {
   font-size: 3rem;
@@ -51,7 +58,7 @@ section .s-title h1 {
 }
 
 @supports (animation-timeline: view(-160% 80%)) {
-  section .s-title{
+  section .s-title {
     animation-timeline: view(-160% 80%);
     animation-name: descida;
     animation-timing-function: linear;
@@ -60,7 +67,7 @@ section .s-title h1 {
 }
 
 @supports not (animation-timeline: view(-160% 80%)) {
-  section .s-title{
+  section .s-title {
     position: sticky;
     top: 10%;
     /* background-color: blue; */
