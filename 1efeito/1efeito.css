@@ -40,7 +40,7 @@ section .s-title {
 section .s-title::after {
   content: "|";
   position: absolute;
-  margin: -170px 0px 0px -60px;
+  margin: -130px 0px 0px -60px;
   font-size: 80vh;
 }
 section .s-title h1 {

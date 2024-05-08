@@ -1,1 +1,1 @@
-ScrollReveal({reset:true}).reveal('.s-content', { delay: 500 });
+ScrollReveal({reset:true}).reveal('.s-content', { delay: 250 });
