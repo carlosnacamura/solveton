@@ -1,18 +1,28 @@
 * {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
 }
 body {
     height: 100%;
-    background-color: rgb(33, 37, 41) !important;
+    background-color: white !important;
 }
 .navbar {
-    border-radius: 30px;
-    margin: 20px 20px 20px 20px;
-    padding: 20px;
-    box-shadow: 4px 4px 30px rgb(45, 45, 45);
-}
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    transition: .3s;
+  }
+  .navbar.navbarFix {
+    animation: aparecao .2s linear;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 7;
+    transition: .5s;
+    background-color: #333;
+  }
 a.navbar-brand {
     margin-left: 20px;
 }
@@ -24,12 +34,14 @@ a.navbar-brand {
 }
 .bottom_header img {
     width: 34%;
+    z-index: 5;
 }
 .gradient {
-    background-image: linear-gradient(transparent 45%,rgb(165, 187, 228));
+    background-image: linear-gradient(transparent 45%,white);
     position: absolute;
     width: 34%;
-    height: 110vh;
+    height: 103vh;
+    z-index: 5;
 }
 .right_gradient {
     right: 0;
@@ -57,7 +69,36 @@ a.navbar-brand {
 img.icons {
     width: 18%;
 }
+
 footer {
-    background-image: linear-gradient();
-    height: 50vh;
+    background-color: black;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer * {
+    color: white;
+}
+.footer_informations,.footer_integrants {
+    margin-top: 10px;
+}
+.footer_informations p {
+    font-size: 20px;
+}
+.footer_informations a {
+    text-decoration: none;
+    transition: .5s;
+    color: rgb(255, 255, 255);
+}
+.footer_informations a:hover {
+    color: rgb(181, 181, 181);
+}
+@keyframes aparecao {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
 }

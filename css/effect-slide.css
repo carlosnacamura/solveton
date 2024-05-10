@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    scroll-behavior: smooth;
+  }
+section {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    position: relative;
+    z-index: 4;
+  }
+  /* body > *:not(header):nth-child(even) */
+  main *:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  section > * {
+    padding: 2rem;
+  }
+  section .s-content {
+    background-color: blue;
+    z-index: 5;
+  }
+  section .s-content p{
+    font-size: 20px;
+  }
+  section .s-title {
+    min-width: 35%;
+    position: relative;
+    height: fit-content;
+    text-align: center;
+    --sizeTitle: 20px;
+  }
+  section .s-title h1::before {
+    content: "";
+    width: var(--sizeTitle);
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    font-size: calc(var(--sizeTitle) * 20);
+    bottom: 0;
+    transform: translate(-50%, 0);
+  }
+  section .s-title h1 {
+    font-size: 2vw;
+  }
+  @keyframes descida {
+    0% {
+      position: sticky;
+      top: 10%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  
+  @supports (animation-timeline: view(-160% 80%)) {
+    section .s-title {
+      animation-timeline: view(-160% 80%);
+      animation-name: descida;
+      animation-timing-function: ease-out;
+      /* background-color: red; */
+    }
+  }
+  
+  @supports not (animation-timeline: view(-160% 80%)) {
+    section .s-title {
+      position: sticky;
+      top: 10%;
+      /* background-color: blue; */
+    }
+  }

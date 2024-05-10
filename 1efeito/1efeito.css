@@ -1,12 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* outline: 1px red solid; */
-}
-:root {
-  scroll-behavior: smooth;
-}
+
 body {
   background-color: rgb(99, 99, 99);
   height: 350vh;
@@ -20,9 +12,10 @@ body {
 } */
 section {
   height: 100vh;
-  background-color: rgb(165, 187, 228);
+  background-color: white;
   display: flex;
   position: relative;
+  z-index: 4;
 }
 /* body > *:not(header):nth-child(even) */
 main *:nth-child(even) {
@@ -31,22 +24,29 @@ main *:nth-child(even) {
 section > * {
   padding: 2rem;
 }
+section .s-content {
+  background-color: blue;
+  z-index: 5;
+}
+section .s-content p{
+  font-size: 20px;
+}
 section .s-title {
   min-width: 35%;
+  position: relative;
   height: fit-content;
   text-align: center;
-  background-color: rgb(165, 187, 228);
 }
-section .s-title::after {
+section .s-title::before {
   content: "|";
   position: absolute;
-  margin: -130px 0px 0px -60px;
-  font-size: 80vh;
+  margin: -660px 0px 0px -60px;
+  font-size: 60vh;
+  z-index: 1;
 }
 section .s-title h1 {
-  font-size: 3rem;
+  font-size: 2vw;
 }
-
 @keyframes descida {
   0% {
     position: sticky;
@@ -61,7 +61,7 @@ section .s-title h1 {
   section .s-title {
     animation-timeline: view(-160% 80%);
     animation-name: descida;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
     /* background-color: red; */
   }
 }
