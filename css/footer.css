@@ -1,0 +1,32 @@
+footer {
+    background-color: black;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer * {
+    color: white;
+}
+.footer_informations,.footer_integrants {
+    margin-top: 10px;
+}
+.footer_informations p {
+    font-size: 20px;
+}
+.footer_informations a {
+    text-decoration: none;
+    transition: .5s;
+    color: rgb(255, 255, 255);
+}
+.footer_informations a:hover {
+    color: rgb(181, 181, 181);
+}
+@keyframes aparecao {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}

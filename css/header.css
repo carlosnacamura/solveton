@@ -1,0 +1,52 @@
+/* ---------------------------------------header */
+.bg-space.header{
+    background-color: rgb(192, 213, 241);
+}
+header{
+    height: var(--heightSection);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: translateX(-15%);
+}
+.header-content{
+    background-color: #13213f;
+    padding: 2rem;
+    color: #a0b0c2;
+    width: 25rem;
+    position: absolute;
+    margin-left: 55%;
+} 
+.header-content h1{
+    color: #dde;
+    font-size: 2.75rem;
+    line-height: 1;
+}
+#more-header{
+    --clrText : rgb(61, 194, 255);
+    text-decoration: none;
+    color: var(--clrText1);
+    transition: .5s;
+    width: fit-content;
+    display: block;
+}
+#more-header:hover{
+    color: var(--clrText);
+}
+#more-header:after{
+    content: '';
+    width: 0;
+    height: 1px;
+    display: block;
+    background-color: var(--clrText);
+    transition: width .5s
+}
+#more-header:hover:after{
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    /* outline: 1px red solid; */
+}
+:root{
+    --maxbreak: 100;
+    --heightSection: 720px;
+    --bgPrototype: #13213f;
+    --clrText1: #d3e5fa;
+}

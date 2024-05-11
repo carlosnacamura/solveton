@@ -1,0 +1,9 @@
+/* ---------------------------------------breaks */
+.bg-space{
+    width: 100%;
+}
+.maxbreak{
+    width: min(100%, 1400px);
+    margin: 0 auto;
+    position: relative;
+}

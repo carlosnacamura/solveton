@@ -1,0 +1,40 @@
+/* ---------------------------------------main - Prototype */
+.sectionPrototype{
+    background-color: var(--bgPrototype);
+}
+section.Prototype{
+    height: var(--heightSection);
+    color: var(--clrText1);
+}
+
+/* ---------------------------------------main - About */
+.bg-space:has(section.About){
+    background-color: rgb(199, 217, 231);
+}
+section.About{
+    display: flex;
+    height: var(--heightSection);
+}
+
+section.About .content-image{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: rotate(90deg);
+}
+section.About .content-image *{
+    width: 10rem;
+    height: 25rem;
+    object-fit: cover;
+}
+section.About .content-image *:nth-child(1){
+    transform: translateY(20%);
+}
+section.About .content-image *:nth-child(3){
+    transform: translateY(-20%);
+}
+section.About .content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
