@@ -17,6 +17,14 @@ footer{
     padding: 10px;
     box-shadow: 0 -3px 10px rgba(246, 253, 255, 0.333);
 }
+.navbar.navbarFix {
+    animation: aparecao .2s linear;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    transition: .5s;
+    background-color: #333;
+  }
 .navbar ul{
     display: flex;
     list-style: none;
@@ -152,4 +160,18 @@ section.About .content-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+
+
+
+/*--------------------------------------- keyframes */
+@keyframes aparecao {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 0;
+    }
 }

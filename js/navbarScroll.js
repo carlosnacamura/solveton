@@ -1,7 +1,6 @@
-const navbar = document.querySelector(".top_header .navbar");
+const navbar = document.querySelector(".navbar");
 
 addEventListener("scroll", () => {
   const y = window.scrollY;
-  navbar.classList.toggle("navbarFix", y > 860);
+  navbar.classList.toggle("navbarFix", y >= 685);
 });
-// Caso queria que a navbar apareça antes diminua os números da coordenada y
