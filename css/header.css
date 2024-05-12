@@ -22,7 +22,22 @@ header img{
     width: 25rem;
     position: absolute;
     margin-left: 55%;
-} 
+}
+.keywords {
+    transition: .5s;
+    display: inline-block;
+    margin: 0px 2px;
+    position: relative;
+}
+.keywords.keywordsFeature::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: currentColor;
+    transition: width .5s;
+    animation: crawl 2s linear;
+}
 .header-content h1{
     color: #dde;
     font-size: 2.75rem;
@@ -49,4 +64,18 @@ header img{
 }
 #more-header:hover:after{
     width: 100%;
+}
+@keyframes crawl {
+    0% {
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    60% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
 }
