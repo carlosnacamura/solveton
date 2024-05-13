@@ -3,8 +3,12 @@
     background-color: var(--bgPrototype);
 }
 section.Prototype{
-    height: var(--heightSection);
+    min-height: 200vh !important;
     color: var(--clrText1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* ---------------------------------------main - About */
@@ -37,4 +41,10 @@ section.About .content-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 600px) {
+    section.Prototype {
+        height: 300vh;
+    }
 }

@@ -22,11 +22,3 @@ footer * {
 .footer_informations a:hover {
     color: rgb(181, 181, 181);
 }
-@keyframes aparecao {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0%);
-    }
-}

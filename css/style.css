@@ -8,26 +8,26 @@ body {
 }
 .navbar {
     height: 50px;
-    background-color: transparent;
     color: #fff;
     position: absolute;
     text-align: center;
     line-height: 50px;
     transition: .3s;
     z-index: 9;
+    animation: aparecao var(--navTrasitions) ease-in-out;
   }
   .navbar.navbarFix {
-    animation: aparecao .2s linear;
+    animation: aparecao var(--navTrasitions) ease-in-out;
     position: fixed;
     top: 0%;
     width: 100%;
-    z-index: 9;
-    transition: .5s;
-    background-color: #333;
+    transition: var(--navTrasitions);
   }
   .navbar.navbarVanish {
-    animation: toVanish .3s ease-in-out;
+    animation: toVanish .7s ease-in-out;
     background-color: #333;
+    position: absolute;
+    display: none;
   }
 a.navbar-brand {
     margin-left: 20px;
@@ -77,12 +77,23 @@ img.icons {
 }
 
 @keyframes toVanish {
-    0% {
-        transform: scaleX(-1);
+    from {
+        transform: translateY(0px);
         position: fixed;
+        display: block;
     }
-    100% {
-        transform: scaleX(0);
+    to {
+        transform: translateY(-90px);
         position: fixed;
+        display: block;
+    }
+}
+
+@keyframes aparecao {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
     }
 }
