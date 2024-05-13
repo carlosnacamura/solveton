@@ -1,8 +1,9 @@
   .card {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 40% !important;
     border-radius: 2px;
+    border: none !important;
     display: flex;
     align-items: center;
     transition: .5s;
@@ -90,7 +91,7 @@
     color: white;
     font-family: monospace;
   }
-  @media (max-width: 600px){
+  @media (max-width: 650px){
     .card {
       width: auto;
       max-width: 350px;

@@ -43,7 +43,7 @@ section.About .content-text{
     justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     section.Prototype {
         height: 300vh;
     }

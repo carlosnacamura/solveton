@@ -1,12 +1,15 @@
 footer {
-    background-color: black;
+    background-color: black; 
     height: 60vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 1px -2px 9px 0px #000000e8;
 }
 footer * {
     color: white;
+    overflow: hidden;
+    z-index: 5;
 }
 .footer_informations,.footer_integrants {
     margin-top: 10px;
@@ -21,4 +24,9 @@ footer * {
 }
 .footer_informations a:hover {
     color: rgb(181, 181, 181);
+}
+footer svg {
+    position: absolute;
+    bottom: -354%;
+    z-index: 2;
 }

@@ -29,9 +29,7 @@ header img{
     margin: 0px 2px;
     position: relative;
 }
-.keywords.keywordsFeature {
-    animation: scale 1s ease-in-out;
-}
+
 .keywords.keywordsFeature::after {
     content: '';
     width: 0%;
@@ -80,13 +78,5 @@ header img{
     }
     100% {
         width: 0%;
-    }
-}
-@keyframes scale {
-    from {
-        transform: scaleX(-1);
-    }
-    to {
-        transform: scaleX(0);
     }
 }
