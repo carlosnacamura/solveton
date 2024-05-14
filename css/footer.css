@@ -6,27 +6,53 @@ footer {
     align-items: center;
     box-shadow: 1px -2px 9px 0px #000000e8;
 }
+
 footer * {
     color: white;
     overflow: hidden;
     z-index: 5;
 }
-.footer_informations,.footer_integrants {
+
+.footer_informations,
+.footer_integrants {
     margin-top: 10px;
 }
+
 .footer_informations p {
     font-size: 20px;
 }
+
 .footer_informations a {
     text-decoration: none;
     transition: .5s;
     color: rgb(255, 255, 255);
 }
+
 .footer_informations a:hover {
     color: rgb(181, 181, 181);
 }
-footer svg {
-    position: absolute;
-    bottom: -354%;
-    z-index: 2;
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px;
+    }
+
+    .footer_informations,
+    .footer_integrants {
+        text-align: center;
+        margin-top: 20px; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        padding: 10px;
+    }
+
+    .footer_informations p {
+        font-size: 16px;
+    }
 }

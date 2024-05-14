@@ -7,12 +7,13 @@ body {
     background-color: white !important;
 }
 .navbar {
-    height: 50px;
     position: absolute;
     text-align: center;
     line-height: 50px;
     transition: .3s;
     width: 100vw;
+    display: flex;
+    align-items: center;
     /* animation: aparecao var(--navTrasitions) ease-in-out; */
   }
   .navbar.navbarFix {
@@ -129,5 +130,16 @@ img.icons {
     to {
         transform: translateY(0%);
         position: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 70px; 
+        line-height: 70px;
+    }
+
+    .circle_header {
+        visibility: hidden !important;
     }
 }

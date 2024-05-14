@@ -3,7 +3,9 @@
     width: 100%;
 }
 .maxbreak{
-    width: min(100%, 1400px);
     margin: 0 auto;
     position: relative;
+}
+.Resume {
+    background-color: rgb(199, 217, 231);
 }
