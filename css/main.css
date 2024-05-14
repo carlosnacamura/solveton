@@ -6,7 +6,7 @@ section {
     padding: 30px;
 }
 section.Prototype{
-    min-height: 400vh !important;
+    min-height: 200vh !important;
     color: var(--clrText1);
     display: flex;
     align-items: center;
